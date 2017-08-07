@@ -1,0 +1,188 @@
+body {
+    background-image: url("../images/Untitled_.png");
+    background-size:1280px 900px;
+    background-repeat: no-repeat;
+    -webkit-background-size: 1280px 900px;
+    -moz-background-size: 1280px 900px;
+    -o-background-size: 1280px 900px;
+}
+.main{
+	position: absolute;
+}
+.welcome{
+	position: relative;
+	
+	font-size: 1px;
+	text-align: center;
+	font-family: arial;
+	text-transform: capitalize;
+	color: #3a4442;
+	text-shadow: 2px 2px 5px #19f4ff;
+}
+.docpic{
+	position: relative;
+	background-image: url("../images/lady_doc.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    float:right;
+    height: 544px;
+    width: 415px;
+    margin-top: -340px;
+    margin-right: 64px;
+    z-index: 100;
+    right:-100%;
+}
+/*----------login input--------*/
+.input-list{
+	list-style: none;
+}
+.inputform{
+	margin-left: 458px;
+    margin-top: 220px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  margin: 0;
+  width: 30%;
+  font-family: sans-serif;
+  font-size: 14px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+
+.style-1 input[type="text"],
+.style-1 input[type="password"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="text"]:focus,
+.style-1 input[type="password"]:focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+/*---------------------------------*/
+.css3button {
+	    margin-left: 105px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	outline: none;
+	color: #123d54;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#afd9fa 0%,
+		#588fad);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#c5e8e3),
+		to(#b0cfca));
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #003366;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+
+/*----------End of First Page--------*/
+
+
+
+body {
+  overflow: hidden;
+}
+
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 40%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(../images/bit.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+
+/*===============*/
+.elem{
+    position:absolute;
+    top: 275px;
+    left: 260px;
+    background-image: url(../images/rot.png);
+    width:150px; 
+    height:150px;
+    
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+.elem {
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotate; 
+    -moz-animation-duration: 2s; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotate {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
